@@ -4,7 +4,7 @@ const scoreEL = document.querySelector('.score p')
 let score = 0
 let gameActive = true; 
 
-const sound =new Audio("/smash.mp3")
+const sound =new Audio("./smash.mp3")
 function run(){
     if (!gameActive) return;
     const i = Math.floor(Math.random() * holes.length)
