@@ -46,10 +46,10 @@ window.addEventListener('mousedown', () => {
 window.addEventListener('mouseup', () => {
     cursor.classList.remove('active')
 })
-window.addEventListener('touchend', () => {
+window.addEventListener('touchstart', () => {
     cursor.classList.add('active');
 });
-window.addEventListener('touchstart', () => {
+window.addEventListener('touchend', () => {
     cursor.classList.remove('active');
 });
     let timeLeft = 30; // 0.5 minute in seconds
