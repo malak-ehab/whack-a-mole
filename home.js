@@ -46,6 +46,10 @@ window.addEventListener('mousedown', () => {
 window.addEventListener('mouseup', () => {
     cursor.classList.remove('active')
 })
+window.addEventListener('touchmove', e => {
+    cursor.style.top = e.touches[0].pageY + 'px';
+    cursor.style.left = e.touches[0].pageX + 'px';
+});
 window.addEventListener('touchstart', () => {
     cursor.classList.add('active');
 });
