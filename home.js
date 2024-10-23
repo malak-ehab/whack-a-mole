@@ -46,6 +46,12 @@ window.addEventListener('mousedown', () => {
 window.addEventListener('mouseup', () => {
     cursor.classList.remove('active')
 })
+window.addEventListener('touchstart', () => {
+    cursor.classList.add('active');
+});
+window.addEventListener('touchend', () => {
+    cursor.classList.remove('active');
+});
     let timeLeft = 30; // 0.5 minute in seconds
 
     const timerElement = document.getElementById('timer');
