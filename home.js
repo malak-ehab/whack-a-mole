@@ -32,7 +32,7 @@ function run(){
     timm = setTimeout(() => {
         hole.removeChild(img)
         run()
-    }, 1200)
+    }, 1000)
 }
 run()
 
